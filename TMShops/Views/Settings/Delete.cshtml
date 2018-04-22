@@ -1,0 +1,89 @@
+﻿@model TMShops.Models.Setting
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Setting</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.moduleKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.moduleKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.desc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.desc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.orders)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.orders)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.flag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.flag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.extras)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.extras)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

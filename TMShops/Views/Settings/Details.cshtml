@@ -1,0 +1,83 @@
+﻿@model TMShops.Models.Setting
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Setting</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.moduleKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.moduleKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.desc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.desc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.orders)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.orders)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.flag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.flag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.extras)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.extras)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
